@@ -1,0 +1,28 @@
+
+<div class="container-fluid">
+        <div class="table-responsive table-bordered">
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th *ngFor="let col of columns">
+                            {{col}}
+                        </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let char of array;let i=index">
+                        <td *ngFor="let col of columns">
+                            {{char[col]}}
+                        </td>
+                        <td>
+                            <button class="delete btn btn-outline-primary btn-sm" (click)="deleteRow(i)"><i class="fa fa-trash"></i></button>
+                            <button class="edit btn btn-outline-primary btn-sm"  (click)="open(i)"><i class="fa fa-pencil "></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    

@@ -1,0 +1,20 @@
+<app-main-nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 header">
+                <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+                    
+                    <agm-marker
+                    *ngFor="let m of markers; let i = index"
+                    [latitude]="m.latitude" [longitude]="m.longitude" [draggable]=false
+                    >
+                    <agm-info-window>
+                        <strong>{{m.name}}</strong>
+                    </agm-info-window>
+                </agm-marker>
+            </agm-map>
+        </div>
+    </div>
+</div>
+</app-main-nav>
+

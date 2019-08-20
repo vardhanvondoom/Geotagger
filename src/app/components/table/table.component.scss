@@ -1,0 +1,25 @@
+.btn{
+    color: #4527A0;
+    border-color: #4527A0;
+}
+
+.btn:hover
+{
+    color:white;
+    background: #4527A0;
+}
+
+.btn:focus{
+    color:white;
+    background:#7E57C2;
+}
+
+.btn:active,.btn:active:focus{
+    color:white;
+    background:#7E57C2;
+}
+
+.edit{
+    margin-left: 5px;
+}
+
